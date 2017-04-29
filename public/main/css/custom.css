@@ -5,7 +5,9 @@ body {
     background-color: #FFFFFF;
 }
 
-
+.main-content{
+    min-height: 500px;
+}
 
 @media (min-width: 1300px){
     .container {
