@@ -11,8 +11,6 @@
 
 
         <div  class="form-group<?php if ($this->formElementErrors($element)) echo " has-error" ?>">
-
-
             <div class="input-group">
                 <div class="input-group-addon">
                     <span class="glyphicon glyphicon-user"></span>
@@ -30,10 +28,9 @@
                         ->setMessageCloseString('</span>')
                         ->render($element);
                 ?>
-
             <?php endif; ?>
-
         </div>
+        
         <div class="clearfix"></div>
         <?php $element = $form->get("submit"); ?>
         <?php echo $this->formElement($element); ?>
