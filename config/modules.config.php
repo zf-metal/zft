@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'Zend\Mvc\Console',
     //ZF
     'Zend\Mvc\Plugin\Identity',
     'Zend\I18n',
@@ -32,5 +33,4 @@ return [
     'ZfcRbac',
     //MODULES
     'Application',
-  //  'Prueba',
 ];
