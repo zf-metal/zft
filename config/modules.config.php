@@ -16,6 +16,7 @@ return [
     'Zend\Router',
     'Zend\Validator',
     'Zend\Navigation',
+    'Zend\Log',
     //DOCTRINE
     'DoctrineModule',
     'DoctrineORMModule',
@@ -23,13 +24,13 @@ return [
     //ZFMETAL
     'ZfMetal\Log',
     'ZfMetal\Mail',
-    'ZfcRbac',
-    'ZfMetal\Security',
-    'ZfMetal\SecuritySocial',
     'ZfMetal\Commons',
     'ZfMetal\Datagrid',
     'ZfMetal\Generator',
+    'ZfMetal\Security',
+    //'ZfMetal\SecuritySocial',
+    'ZfcRbac',
     //MODULES
     'Application',
-    'Prueba',
+  //  'Prueba',
 ];

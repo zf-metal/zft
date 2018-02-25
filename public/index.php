@@ -41,4 +41,16 @@ if (file_exists(__DIR__ . '/../config/development.config.php')) {
 }
 
 // Run the application!
-Application::init($appConfig)->run();
+try{
+    Application::init($appConfig)->run();
+}catch (\Exception $e){
+    echo '<h4>Message:</h4>';
+    echo "<pre>";
+    echo $e->getMessage().PHP_EOL;
+    echo "</pre>";
+    echo '<h4>StackTrace:</h4>';
+    echo "<pre>";
+    echo $e->getTraceAsString().PHP_EOL;
+    echo "</pre>";
+}
+
