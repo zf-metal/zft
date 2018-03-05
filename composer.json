@@ -34,7 +34,9 @@
   "autoload": {
     "psr-4": {
       "Application\\": "module/Application/src/",
-      "SkinAdminlte\\": "module/SkinAdminlte/src/"
+      "SkinAdminlte\\": "module/SkinAdminlte/src/",
+      "SkinCentaurus\\": "module/SkinCentaurus/src/",
+      "SkinMaterialDesignB4\\": "module/SkinMaterialDesignB4/src/"
     }
   },
   "autoload-dev": {

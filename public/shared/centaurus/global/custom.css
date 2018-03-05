@@ -1,0 +1,185 @@
+ul.pagination.pull-right.pagination{
+    margin:5px 10px;
+}
+
+H2.main-box-header-custom{
+    margin: 0px 0px 0px 20px;
+    padding: 5px;    
+}
+
+.search-btn{
+    font-size: 12px !important;
+    height: 34px !important;
+    padding: 6px 20px !important; 
+}
+
+.action_column{
+    text-align: right;
+
+}
+
+.navbar-right .dropdown-menu {
+    right: 0;
+    left: auto !important;
+}
+
+#content-wrapper{
+    min-height: 700px !important;
+}
+
+.btnCustom{
+    background-color: #fff;
+    border: 1px solid #3498db;
+    font-size: 12px;
+    color: #2980b9;   
+    margin-top: 2px;
+}
+.btnCustom:hover{
+    background-color: #3498db;
+    color: #fff; 
+}
+
+.btnCancelCustom{
+    background-color: #fff;
+    border: 1px solid #7f8c8d;
+    font-size: 12px;
+    color: #7f8c8d;   
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.btnAjaxCustom{
+    margin-left: 2px ! important;
+}
+
+.btnCancelCustom:hover{
+    background-color: #7f8c8d;
+    color: #fff; 
+}
+
+.btnCircle{
+    border-radius: 25px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    margin: 1px;
+    line-height:14px !important;
+}
+
+.btnBlue{
+    border-color: #337ab7;
+    background-color: #fff;
+    color: #337ab7;
+}
+
+.btnBlue:hover{
+    background-color: #337ab7;
+    color: #fff; 
+}
+
+.btnGreen{
+    border-color: #2ECC71;
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+.btnGreen:hover{
+    background-color: #2ECC71;
+    color: #fff; 
+}
+
+.btnGray{
+    border-color: #95A5A6;
+    background-color: #fff;
+    color: #95A5A6;
+}
+
+.btnGray:hover{
+    background-color: #95A5A6;
+    color: #fff; 
+}
+
+.btnRed{
+    border-color: #e74c3c;
+    background-color: #fff;
+    color: #e74c3c;
+}
+
+.btnRed:hover{
+    background-color: #e74c3c;
+    color: #fff; 
+}
+
+.btnYellow{
+    border-color: #F1C40F;
+    background-color: #fff;
+    color: #F1C40F;
+}
+
+.btnYellow:hover{
+    background-color: #F1C40F;
+    color: #fff; 
+}
+
+.faCenterCustom{
+    line-height:initial !important; 
+}
+
+.select2-container{
+    min-width: 100% !important;
+}
+
+.removeCursorCustom{
+    cursor: default !important;
+}
+
+.addPaddingTopCustom{
+    padding-top: 25px !important;    
+}
+
+.form-control{
+    font-size: 12px;
+}
+
+.nav-tabs > li > a{
+    font-size: 14px !important;
+}
+
+.deleteModalCustom{
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+body{
+    zoom: 90%;
+}
+
+.linkCustom{
+    color: #344644;
+     cursor: pointer;
+}
+.linkCustom:hover{
+    cursor: pointer;
+}
+
+.btnDetalleEdit{
+    margin-right: 2px;
+}
+
+.boxDeuda{
+    float: left;
+}
+
+.titleDeuda {
+    font-size: 14px !important; 
+    padding-bottom: 10px !important;
+    color: #999;
+}
+
+.symbolMoney{
+    font-size: 15px;
+    line-height: 1.5;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
