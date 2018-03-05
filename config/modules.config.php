@@ -33,4 +33,5 @@ return [
     'ZfcRbac',
     //MODULES
     'Application',
+    'SkinAdminlte'
 ];
