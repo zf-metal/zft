@@ -49,9 +49,13 @@ $this->notyFlash(true);
                 </div>
 
 
-                <?php $element = $form->get('_remember'); ?>
-                <?php echo $this->formElement($element); ?>
-
+                <div class="togglebutton">
+                    <label>
+                        <?php $element = $form->get('_remember'); ?>
+                        <?php echo $this->formElement($element); ?>
+                         Recordar usuario
+                    </label>
+                </div>
 
             </div>
             <div class="footer text-center">
