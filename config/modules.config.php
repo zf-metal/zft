@@ -33,7 +33,8 @@ return [
     'ZfcRbac',
     //MODULES
     'Application',
-    'SkinAdminlte',
+    //'SkinAdminlte',
     //'SkinCentaurus',
-   // 'SkinMaterialDesignB4'
+    //'SkinMaterialDesignB4',
+    'SkinMaterialDashboard'
 ];

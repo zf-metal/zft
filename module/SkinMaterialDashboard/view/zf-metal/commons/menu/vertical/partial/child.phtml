@@ -1,0 +1,13 @@
+<li<?php if ($this->page->isActive()) echo ' class="active"' ?>>
+    <a
+        href="<?php echo $this->page->getHref() ?>"
+        <?php if ($this->page->getTarget() != ""): ?>
+            target="<?php echo $this->page->getTarget(); ?>"
+        <?php endif; ?>
+    >
+
+        <span class="sidebar-mini"> <?php echo $this->page->get("icon"); ?> </span>
+        <span class="sidebar-normal"> <?php echo $this->page->getLabel() ?> </span>
+
+    </a>
+</li>
