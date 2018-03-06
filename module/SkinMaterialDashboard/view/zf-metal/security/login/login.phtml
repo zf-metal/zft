@@ -10,21 +10,9 @@ $this->notyFlash(true);
         <div class="card card-login">
             <div class="card-header text-center" data-background-color="rose">
                 <h4 class="card-title">Login</h4>
-                <div class="social-line">
-                    <a href="#btn" class="btn btn-just-icon btn-simple">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-just-icon btn-simple">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#eugen" class="btn btn-just-icon btn-simple">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                </div>
+
             </div>
-            <p class="category text-center">
-                Or Be Classical
-            </p>
+
             <div class="card-content">
 
 
@@ -59,14 +47,14 @@ $this->notyFlash(true);
 
             </div>
             <div class="footer text-center">
-                <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg"> Let's go</button>
+                <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg"> Ingresar</button>
             </div>
 
             <div class="footer text-center">
-                <a href="<?php echo $this->basePath(' / user / recovery'); ?>"><?= $this->translate('I forgot my password') ?></a><br>
+                <a href="<?php echo $this->basePath(' / user / recovery'); ?>"><?= $this->translate('Recordar Contraseña') ?></a><br>
                 <?php if ($this->getSecurityOptions()->getPublicRegister()) : ?>
                     <a href="<?php echo $this->basePath(' / user / register'); ?>"
-                       class="text-center"><?= $this->translate('Register a new membership') ?></a>
+                       class="text-center"><?= $this->translate('Registrarse') ?></a>
                 <?php endif; ?>
             </div>
 
