@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Title</title>
+    <title><?php echo isset($title)?$title:"Axion";?></title>
 
 
     <?php echo $this->partial('layout/partials/meta'); ?>
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
 </body>
 </html>

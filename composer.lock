@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9711feb74fcb9012414ed1d7bbfe49a0",
+    "content-hash": "57ef512b38cf609e0ee14bb5ef36011a",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3620,20 +3620,24 @@
         },
         {
             "name": "zf-metal/commons",
-            "version": "1.0.1",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf-metal/commons.git",
-                "reference": "e76409f08462febff7ab1ee6119b7711da176754"
+                "reference": "ec70589f44ad22dd350f0136258b9796fbb8718d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zf-metal/commons/zipball/e76409f08462febff7ab1ee6119b7711da176754",
-                "reference": "e76409f08462febff7ab1ee6119b7711da176754",
+                "url": "https://api.github.com/repos/zf-metal/commons/zipball/ec70589f44ad22dd350f0136258b9796fbb8718d",
+                "reference": "ec70589f44ad22dd350f0136258b9796fbb8718d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=5.6",
+                "zendframework/zend-eventmanager": "^3.2.0",
+                "zendframework/zend-mvc": "^3.1.1",
+                "zendframework/zend-servicemanager": "^3.3.2",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0"
             },
             "type": "library",
             "autoload": {
@@ -3664,20 +3668,20 @@
             "keywords": [
                 "zf3"
             ],
-            "time": "2018-02-26T18:09:44+00:00"
+            "time": "2018-03-21T18:31:57+00:00"
         },
         {
             "name": "zf-metal/datagrid",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf-metal/datagrid.git",
-                "reference": "2c8f61d245f25022e17eea81a6ff2fa3b27c0eb5"
+                "reference": "087ba97fbbbc4a7c576c7b67cd8b2c1808fe0527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zf-metal/datagrid/zipball/2c8f61d245f25022e17eea81a6ff2fa3b27c0eb5",
-                "reference": "2c8f61d245f25022e17eea81a6ff2fa3b27c0eb5",
+                "url": "https://api.github.com/repos/zf-metal/datagrid/zipball/087ba97fbbbc4a7c576c7b67cd8b2c1808fe0527",
+                "reference": "087ba97fbbbc4a7c576c7b67cd8b2c1808fe0527",
                 "shasum": ""
             },
             "require": {
@@ -3740,20 +3744,20 @@
                 "zf2",
                 "zf3"
             ],
-            "time": "2017-08-09T16:40:30+00:00"
+            "time": "2018-03-21T12:03:40+00:00"
         },
         {
             "name": "zf-metal/generator",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf-metal/generator.git",
-                "reference": "de7645c2872611af158ea81a0b85c069c9fdee0e"
+                "reference": "7abd9f55bd1056d93c215c276687dadbc2af81b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zf-metal/generator/zipball/de7645c2872611af158ea81a0b85c069c9fdee0e",
-                "reference": "de7645c2872611af158ea81a0b85c069c9fdee0e",
+                "url": "https://api.github.com/repos/zf-metal/generator/zipball/7abd9f55bd1056d93c215c276687dadbc2af81b2",
+                "reference": "7abd9f55bd1056d93c215c276687dadbc2af81b2",
                 "shasum": ""
             },
             "require": {
@@ -3800,7 +3804,7 @@
                 "routes",
                 "zf3"
             ],
-            "time": "2018-02-26T03:12:44+00:00"
+            "time": "2018-03-21T18:20:24+00:00"
         },
         {
             "name": "zf-metal/log",
@@ -3903,16 +3907,16 @@
         },
         {
             "name": "zf-metal/security",
-            "version": "1.0.4",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf-metal/Security.git",
-                "reference": "772751a03c270622f7a7056f14a57fa70c274b7b"
+                "reference": "32369582e30c09447b8e2dcbc5cd4ff7fc873c83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zf-metal/Security/zipball/772751a03c270622f7a7056f14a57fa70c274b7b",
-                "reference": "772751a03c270622f7a7056f14a57fa70c274b7b",
+                "url": "https://api.github.com/repos/zf-metal/Security/zipball/32369582e30c09447b8e2dcbc5cd4ff7fc873c83",
+                "reference": "32369582e30c09447b8e2dcbc5cd4ff7fc873c83",
                 "shasum": ""
             },
             "require": {
@@ -3927,6 +3931,7 @@
                 "zendframework/zend-mvc-plugin-flashmessenger": "^1.0.0",
                 "zendframework/zend-mvc-plugin-identity": "^1.0",
                 "zf-commons/zfc-rbac": "^2.6.3",
+                "zf-metal/commons": "^1.0.0",
                 "zf-metal/datagrid": "^1.0.0",
                 "zf-metal/log": "^1.0.0",
                 "zf-metal/mail": "^1.0.0"
@@ -3960,7 +3965,7 @@
             "keywords": [
                 "zf3"
             ],
-            "time": "2018-03-06T12:13:15+00:00"
+            "time": "2018-03-16T14:04:07+00:00"
         },
         {
             "name": "zf-metal/security-social",

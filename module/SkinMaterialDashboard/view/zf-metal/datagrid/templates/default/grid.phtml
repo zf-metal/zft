@@ -15,12 +15,12 @@
 
             <?php echo $this->partial($this->partialExports, array("grid" => $this->grid)); ?>
 
-            <?php if ($this->grid->getOptions()->getCrudConfig()->getAdd()->getEnable()): ?>
-                <a <?php echo $this->grid->getCrudColumn()->getAdd()["action"]; ?>
+            <?php /*if ($this->grid->getOptions()->getCrudConfig()->getAdd()->getEnable()): */?><!--
+                <a <?php /*echo $this->grid->getCrudColumn()->getAdd()["action"]; */?>
                         class="btn pull-right btnCustom" style="margin-left:2px;">
-                    <i class="fa fa-plus-circle fa-lg"></i> <?php echo $this->grid->getCrudColumn()->getAdd()["value"]; ?>
+                    <i class="fa fa-plus-circle fa-lg"></i> <?php /*echo $this->grid->getCrudColumn()->getAdd()["value"]; */?>
                 </a>
-            <?php endif; ?>
+            --><?php /*endif; */?>
             <?php if ($this->grid->getOptions()->getMultiSearchConfig()->getEnable()): ?>
                 <?php echo $this->partial($this->partialSearch, array("grid" => $this->grid)); ?>
             <?php endif; ?>
@@ -68,8 +68,8 @@
                                     <?php endif; ?>
 
                                 <?php else: ?>
-                                    <th class="<?php echo $column->getThClass(); ?>">
-                                    <?php echo $this->translate((string)$column); ?>
+                                    <th class=" <?php echo $column->getThClass(); ?>">
+                                    <a><?php echo $this->translate((string)$column); ?></a>
 
                                 <?php endif; ?>
                                 </th>
@@ -81,7 +81,7 @@
                     </thead>
                     <tbody>
                     <!--BODY-->
-                    <?php if (count($this->grid->getRow())): ?>
+                    <?php if ($this->grid->getRow() && count($this->grid->getRow())): ?>
                         <?php foreach ($this->grid->getRow() as $data): ?>
                             <tr>
                                 <?php foreach ($this->grid->getColumns() as $column): ?>

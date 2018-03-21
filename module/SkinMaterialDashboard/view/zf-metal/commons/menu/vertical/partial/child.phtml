@@ -5,8 +5,12 @@
             target="<?php echo $this->page->getTarget(); ?>"
         <?php endif; ?>
     >
+        <?php if ($this->page->get("icon") !== ""): ?>
+            <i class="material-icons"><?php echo $this->page->get("icon"); ?></i>
+        <?php else : ?>
+            <i class="material-icons">timeline</i>
+        <?php endif; ?>
 
-        <span class="sidebar-mini"> <?php echo $this->page->get("icon"); ?> </span>
         <span class="sidebar-normal"> <?php echo $this->page->getLabel() ?> </span>
 
     </a>

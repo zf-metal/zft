@@ -8,9 +8,9 @@ if (!preg_match("/form-control/", $class)) {
 <div  class="form-group<?php if ($this->formElementErrors($this->element)) echo " has-error" ?>">
 
     <label class="control-label"><?php echo ucfirst($this->translate($this->element->getLabel())); ?></label>
-
+<p>
     <?php echo $this->formElement($this->element); ?>
-
+</p>
     <?php if ($element->getOption('description')): ?>
         <p class="help-block"><?php echo $this->element->getOption('description') ?></p>
     <?php endif; ?>

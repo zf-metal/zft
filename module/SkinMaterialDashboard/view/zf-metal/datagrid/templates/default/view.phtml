@@ -21,8 +21,6 @@
                 </i>
             <?php endif; ?>
 
-            </h4>
-
             <div class="clearfix"></div>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered">
@@ -36,7 +34,11 @@
                                         <?php if (is_a($value, "DateTime")): ?>
                                             <?php echo $value->format("Y-m-d H:i:s"); ?>
                                         <?php elseif (is_a($value, 'Doctrine\ORM\PersistentCollection')): ?>
-                                            <?php echo count($value); ?><?php echo $this->translate(' Items'); ?>
+                                            <ul>
+                                                <?php foreach ($value as $item) :?>
+                                                    <li><?php echo $item; ?></li>
+                                                <?php endforeach;?>
+                                            </ul>
                                         <?php else: ?>
                                             <?php echo $value; ?>
                                         <?php endif; ?>
