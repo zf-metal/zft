@@ -5,8 +5,10 @@ namespace Application;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
-    'factories' => [
-        \Application\Controller\IndexController::class => InvokableFactory::class,
+    'controllers' => [
+        'factories' => [
+            \Application\Controller\IndexController::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
+        ],
     ],
 ];
 

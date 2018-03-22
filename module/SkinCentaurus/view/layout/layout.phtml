@@ -19,11 +19,7 @@
         <header class="navbar" id="header-navbar">
             <div class="container">
                 <a href="<?= $this->url('home'); ?>" id="logo" class="navbar-brand">
-
-                        <img src="/img/logo.png" alt="" class="normal-logo logo-white"/>
-                        <img src="/img/logo.png" alt="" class="normal-logo logo-black"/>
-                        <img src="/img/logo.png" alt="" class="small-logo hidden-xs hidden-sm hidden"/>
-
+                    <b><?php echo $this->layoutHelper()->getTitle(); ?></b>
                 </a>
                 <div class="clearfix">
                     <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
@@ -50,12 +46,8 @@
 
                             <!--Render zf-metal/security partial menu-->
                             <?php echo $this->partial('zf-metal/security/menu/menu'); ?>
+                            <?php //echo $this->partial('layout/power-off'); ?>
 
-                            <li class="hidden-xxs">
-                                <a href="<?= $this->url('zf-metal.user/logout'); ?>" class="btn">
-                                    <i class="fa fa-power-off"></i>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
