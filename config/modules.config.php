@@ -35,6 +35,7 @@ return [
     'Application',
     //'SkinAdminlte',
     //'SkinCentaurus',
-    'SkinMaterialDesignB4',
+    //'SkinMaterialDesignB4',
     //'SkinMaterialDashboard'
+    // 'SkinTaurus'
 ];

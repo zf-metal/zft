@@ -196,8 +196,8 @@ return [
                 'edit' => [
                     'enable' => true,
                     'class' => 'material-icons text-primary cursor-pointer',
+                    'value' => 'mode_edit',
                     'action' => 'href="/admin/users/edit/{{id}}"',
-                    'value' => 'mode_edit'
                 ],
                 'del' => [
                     'enable' => true,
@@ -207,8 +207,8 @@ return [
                 'view' => [
                     'enable' => true,
                     'class' => 'material-icons text-success cursor-pointer',
-                    'action' => 'href="/admin/users/view/{{id}}"',
                     'value' => 'view_list',
+                    'action' => 'href="/admin/users/view/{{id}}"',
                 ],
                 'manager' => [
                     'enable' => false,

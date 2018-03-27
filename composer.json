@@ -37,7 +37,8 @@
       "SkinAdminlte\\": "module/SkinAdminlte/src/",
       "SkinCentaurus\\": "module/SkinCentaurus/src/",
       "SkinMaterialDesignB4\\": "module/SkinMaterialDesignB4/src/",
-      "SkinMaterialDashboard\\": "module/SkinMaterialDashboard/src/"
+      "SkinMaterialDashboard\\": "module/SkinMaterialDashboard/src/",
+      "SkinTaurus\\": "module/SkinTaurus/src/"
     }
   },
   "autoload-dev": {

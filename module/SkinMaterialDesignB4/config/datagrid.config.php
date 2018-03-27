@@ -2,36 +2,37 @@
 
 return [
     'zf-metal-datagrid.options' => [
-            'crudConfig' => [
+        'crudConfig' => [
+            'enable' => true,
+            'side' => "right",
+            'displayName' => "Acciones",
+            'tdClass' => 'action_column',
+            'thClass' => 'action_column',
+            'add' => [
                 'enable' => true,
-                'side' => "right",
-                'displayName' => "Acciones",
-                'tdClass' => 'action_column',
-                'thClass' => 'action_column',
-                'add' => [
-                    'enable' => true,
-                    'value' => 'Agregar',
-                ],
-                'edit' => [
-                    'enable' => true,
-                    'class' => '',
-                    'value' => '<span class="fa-stack btnCircle btn btnBlue"></i><i class="fa fa-pencil fa-stack-1x"></i></span>',
-                ],
-                'del' => [ 
-                    'enable' => true,
-                    'class' => '',
-                    'value' => '<span class="fa-stack btnCircle btn btnRed"></i><i class="fa fa-trash-o fa-stack-1x"></i></span>',
-                ],
-                'view' => [
-                    'enable' => false,
-                    'class' => '',
-                    'value' => '<span class="fa-stack btnCircle btn btnBlue"></i><i class="fa fa-search-plus fa-stack-1x"></i></span>',
-                ],
-                'manager' => [
-                    'enable' => false,
-                    'value' => '',
-                ],
+                'class' => 'material-icons text-primary cursor-pointer',
+                'value' => 'add',
+            ],
+            'edit' => [
+                'enable' => true,
+                'class' => 'material-icons text-primary cursor-pointer',
+                'value' => 'mode_edit',
+            ],
+            'del' => [
+                'enable' => true,
+                'class' => 'material-icons text-danger cursor-pointer',
+                'value' => 'delete_sweep'
+            ],
+            'view' => [
+                'enable' => false,
+                'class' => 'material-icons text-success cursor-pointer',
+                'value' => 'view_list',
+            ],
+            'manager' => [
+                'enable' => false,
+                'value' => '',
             ],
         ],
+    ],
 
 ];

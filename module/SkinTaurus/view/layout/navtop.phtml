@@ -1,0 +1,60 @@
+<nav class="navbar brb" role="navigation">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-reorder"></span>
+        </button>
+        <a class="navbar-brand" href="/"><?php echo $this->layoutHelper()->getPageTitle(); ?></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <?php
+        echo $this->renderMenu(\ZfMetal\Commons\Consts::STYLE_MENU_HORIZONTAL, "", "nav navbar-nav");
+        ?>
+
+
+        <ul class="navbar-nav navbar-right">
+
+            <?php if ($user = $this->isAuthenticated()): ?>
+                <li>
+                    <a href="/user/logout" rel="tooltip" data-original-title="Salir" data-placement="bottom">
+                        <i class="fa fa-sign-in"></i>
+                    </a>
+                </li>
+
+                <?php if ($this->isGranted("general-admin")): ?>
+                    <li class="dropdown profile-dropdown">
+                        <a class="dropdown-toggle " data-toggle="dropdown" href="#">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/admin/users"><i
+                                            class="fa fa-user"></i> <?php echo $this->translate('Usuarios'); ?></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="/admin/roles"><i
+                                            class="fa fa-cog"></i> <?php echo $this->translate('Roles'); ?></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="/admin/groups"><i
+                                            class="fa fa-group"></i> <?php echo $this->translate('Grupos'); ?></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                <?php endif; ?>
+            <?php else: ?>
+                <li>
+                    <a href="/user/login" rel="tooltip" data-original-title="Iniciar Sesión"
+                       data-placement="bottom">
+                        <i class="fa fa-lock"></i>
+                        <span>Iniciar Sesión</span>
+
+                    </a>
+                </li>
+            <?php endif; ?>
+            <li class="separator hidden-lg hidden-md"></li>
+        </ul>
+    </div>
+</nav>
