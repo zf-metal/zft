@@ -11,7 +11,7 @@
         <div class="card card-login">
             <div class="card-header text-center" data-background-color="gray">
                 <div class="">
-                    <img src="<?php echo $this->basePath(); ?> /img/axion-logo-login.png" alt="">
+                    <?php echo $this->layoutHelper()->getTitle(); ?>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
             <div class="footer text-center">
                 <a href="<?php echo $this->basePath('/user/recovery'); ?>"><?= $this->translate('Recordar Contraseña') ?></a><br>
                 <?php if ($this->getSecurityOptions()->getPublicRegister()) : ?>
-                    <a href="<?php echo $this->basePath(' / user / register'); ?>"
+                    <a href="<?php echo $this->basePath('/user/register'); ?>"
                        class="text-center"><?= $this->translate('Registrarse') ?></a>
                 <?php endif; ?>
             </div>

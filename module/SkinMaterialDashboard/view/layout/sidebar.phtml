@@ -8,28 +8,55 @@
 
     <div class="sidebar-wrapper ps-container ps-theme-default ps-active-y">
         <?php if ($user = $this->isAuthenticated()): ?>
+
+
+
             <div class="user">
                 <div class="photo">
-
                     <?php if ($user && $user->getImg()): ?>
                         <img src="<?php echo $this->getSecurityOptions()->getProfilePicturePathRelative() . $user->getImg(); ?>">
                     <?php else : ?>
-                        <img src="/img/axion-logo-mini.png">
+                        <img src="/img/user.jpg">
                     <?php endif; ?>
+                </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="#puser" class="username collapsed" aria-expanded="false">
+                        <span>
+                             <?php if ($user && $user->getName()) {
+                                 echo $user->getName();
+                             } elseif ($user && $user->getUsername()) {
+                                 echo $user->getUsername();
+                             } ?>                            <b class="caret"></b>
+                        </span>
+                    </a>
+                </div>
+                <div class="collapse" id="puser"  aria-expanded="true">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/profile">
+                                <i class="material-icons">person_pin</i>
+                                <span class="sidebar-normal"> Perfil </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/logout">
+                                <i class="material-icons">exit_to_app</i>
+                                <span class="sidebar-normal"> Salir </span>
+                            </a>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        <?php else: ?>
+            <div class="user">
+                <div class="photo">
+                        <img src="/img/user.jpg">
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                        <span>
-                                 <?php if ($user && $user->getName()) {
-                                     echo $user->getName();
-                                 } elseif ($user && $user->getUsername()) {
-                                     echo $user->getUsername();
-                                 } ?>
-                            </span>
-
+                        <span>Invitado</span>
                     </a>
-
                 </div>
             </div>
         <?php endif; ?>
