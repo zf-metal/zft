@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'Zend\Mvc\Console',
+
     //ZF
     'Zend\Mvc\Plugin\Identity',
     'Zend\I18n',
@@ -18,6 +18,8 @@ return [
     'Zend\Validator',
     'Zend\Navigation',
     'Zend\Log',
+    'Zend\Mvc\I18n',
+    'Zend\Mvc\Console',
     //DOCTRINE
     'DoctrineModule',
     'DoctrineORMModule',
@@ -36,6 +38,6 @@ return [
     //'SkinAdminlte',
     //'SkinCentaurus',
     //'SkinMaterialDesignB4',
-    //'SkinMaterialDashboard'
+    'SkinMaterialDashboard'
     // 'SkinTaurus'
 ];
