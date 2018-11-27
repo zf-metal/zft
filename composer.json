@@ -24,14 +24,12 @@
     "doctrine/doctrine-orm-module": "^1.1",
     "gedmo/doctrine-extensions": "^2.4",
     "zfcampus/zf-development-mode": "^3.0",
-    "zf-metal/log": "^1.0.0",
-    "zf-metal/mail": "^1.0.0",
-    "zf-metal/security": "^1.0.9",
-    "zf-metal/security-social": "^1.0.0",
-    "zf-metal/commons": "^1.1.5",
-    "zf-metal/datagrid": "^1.0.1",
-    "zf-metal/generator": "^1.0.4",
-    "zendframework/zend-mvc-console": "^1.1"
+    "zendframework/zend-mvc-console": "^1.1",
+    "zendframework/zend-mail": "^2.8",
+    "zendframework/zend-mvc-plugin-identity": "^1.0",
+    "swissengine/doctrine-module-extension": "dev-master",
+    "zf-commons/zfc-rbac": "^2.6.3",
+    "zendframework/zend-crypt": "^3.2"
   },
   "autoload": {
     "psr-4": {
@@ -40,7 +38,14 @@
       "SkinCentaurus\\": "module/SkinCentaurus/src/",
       "SkinMaterialDesignB4\\": "module/SkinMaterialDesignB4/src/",
       "SkinMaterialDashboard\\": "module/SkinMaterialDashboard/src/",
-      "SkinTaurus\\": "module/SkinTaurus/src/"
+      "SkinTaurus\\": "module/SkinTaurus/src/",
+      "ZfMetal\\Commons\\": "module/ZfMetal/commons/src/",
+      "ZfMetal\\Datagrid\\": "module/ZfMetal/datagrid/src/",
+      "ZfMetal\\Mail\\": "module/ZfMetal/mail/src/",
+      "ZfMetal\\Log\\": "module/ZfMetal/log/src/",
+      "ZfMetal\\Security\\": "module/ZfMetal/Security/src/",
+      "ZfMetal\\Generator\\": "module/ZfMetal/generator/src/",
+      "ZfMetal\\EmailCampaigns\\": "module/ZfMetal/email-campaigns/src/"
     }
   },
   "autoload-dev": {

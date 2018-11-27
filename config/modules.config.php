@@ -26,11 +26,12 @@ return [
     'SwissEngine\Tools\Doctrine\Extension',
     //ZFMETAL
     'ZfMetal\Log',
-    'ZfMetal\Mail',
+   // 'ZfMetal\Mail',
     'ZfMetal\Commons',
     'ZfMetal\Datagrid',
     'ZfMetal\Generator',
     'ZfMetal\Security',
+    'ZfMetal\EmailCampaigns',
     //'ZfMetal\SecuritySocial',
     'ZfcRbac',
     //MODULES
