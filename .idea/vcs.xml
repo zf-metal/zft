@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/Security" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/commons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/datagrid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/email-campaigns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/log" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module/ZfMetal/mail" vcs="Git" />
+  </component>
+</project>
