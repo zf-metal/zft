@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "276045d6308ed30980bde2ff91edc6b7",
+    "content-hash": "103b7ff172e8c7eb8cc12ee812ac2c42",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1595,6 +1595,59 @@
                 "zf"
             ],
             "time": "2018-05-01T21:58:00+00:00"
+        },
+        {
+            "name": "zendframework/zend-code",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-code.git",
+                "reference": "2899c17f83a7207f2d7f53ec2f421204d3beea27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-code/zipball/2899c17f83a7207f2d7f53ec2f421204d3beea27",
+                "reference": "2899c17f83a7207f2d7f53ec2f421204d3beea27",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || 7.0.0 - 7.0.4 || ^7.0.6",
+                "zendframework/zend-eventmanager": "^2.6 || ^3.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "ext-phar": "*",
+                "phpunit/phpunit": "^4.8.21",
+                "squizlabs/php_codesniffer": "^2.5",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
+                "zendframework/zend-stdlib": "Zend\\Stdlib component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Code\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides facilities to generate arbitrary code using an object oriented interface",
+            "homepage": "https://github.com/zendframework/zend-code",
+            "keywords": [
+                "code",
+                "zf2"
+            ],
+            "time": "2016-10-24T13:23:32+00:00"
         },
         {
             "name": "zendframework/zend-component-installer",
@@ -3783,54 +3836,6 @@
     ],
     "packages-dev": [
         {
-            "name": "cdi/cdilogger",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cincarnato/cdilogger.git",
-                "reference": "a7eee869f95e1da24a8acd86eb11b4cf8a286e3f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cincarnato/cdilogger/zipball/a7eee869f95e1da24a8acd86eb11b4cf8a286e3f",
-                "reference": "a7eee869f95e1da24a8acd86eb11b4cf8a286e3f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CdiLogger\\": "src/"
-                },
-                "classmap": [
-                    "./Module.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "WTFPL"
-            ],
-            "authors": [
-                {
-                    "name": "Cristian Incarnato",
-                    "email": "cristian.cdi@gmail.com"
-                }
-            ],
-            "description": "Zend Framework 3 Module that provides a logger",
-            "keywords": [
-                "Zend Framework",
-                "Zend Framework 3",
-                "doctrine",
-                "log",
-                "logger",
-                "zend framework 2",
-                "zf2"
-            ],
-            "time": "2016-11-13T00:35:14+00:00"
-        },
-        {
             "name": "jhuet/zdt-logger-module",
             "version": "1.0.0",
             "source": {
@@ -4081,8 +4086,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "zendframework/zend-component-installer": 20,
-        "swissengine/doctrine-module-extension": 20,
-        "cdi/cdilogger": 20
+        "swissengine/doctrine-module-extension": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
