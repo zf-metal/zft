@@ -68,7 +68,6 @@
   },
   "require-dev": {
     "zendframework/zend-developer-tools": "^1.1",
-    "jhuet/zdt-logger-module": "^1.0",
-    "cdi/cdilogger": "dev-master"
+    "jhuet/zdt-logger-module": "^1.0"
   }
 }
